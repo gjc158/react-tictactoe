@@ -49,16 +49,22 @@ ol, ul {
 .square:focus {
   outline: none;
 }
-
+.square.win{
+  color: red;
+}
 .kbd-navigation .square:focus {
   background: #ddd;
 }
 
 .game {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .game-info {
-  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.game-info .bolder {
+  font-weight: bolder;
 }

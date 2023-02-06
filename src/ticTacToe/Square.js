@@ -2,7 +2,7 @@
 function Square(props) {
     return (
       <button
-        className="square"
+        className={`square ${props.className}`}
         onClick={props.onClick}>
         {props.value}
       </button>
