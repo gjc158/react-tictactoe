@@ -4,12 +4,10 @@ import Square from './Square';
 class Board extends React.Component{
 
     renderSquare(i) {
-        console.info(this.props)
         const col = [0, 1, 2]
         return(
             col.map((item) => {
                 const cur = i * 3 + item
-                console.info('1111', this.props.winnerArr.includes(cur))
                 return <Square 
                 key={cur.toString()}
                 className={this.props.winnerArr.includes(cur) ? 'win' : ''}

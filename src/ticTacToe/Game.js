@@ -34,7 +34,6 @@ class Game extends React.Component{
         const squares = current.squares.slice();
         const result = calculateWinner(squares)
         if (result.winner || squares[i]) {
-            console.info(result)
             this.setState({
                 winnerArr: result.arr
             })
@@ -104,7 +103,7 @@ class Game extends React.Component{
                     />
                 </div>
                 <div className="game-info">
-                    <div>{status}</div>
+                    <div className="status-desc">{status}</div>
                     <button onClick={() => this.handleSort()}>{sortDesc}</button>
                     <div>{sort?moves:moves.reverse()}</div>
 

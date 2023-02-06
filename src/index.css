@@ -35,15 +35,15 @@ ol, ul {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 68px;
+  height: 68px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 68px;
 }
 
 .square:focus {
@@ -61,10 +61,25 @@ ol, ul {
   flex-direction: column;
 }
 
+.game-info .status-desc{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 .game-info {
   margin-top: 20px;
 }
 
 .game-info .bolder {
   font-weight: bolder;
+}
+
+.game-info button {
+  height: 34px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: #f3f3f3;
+  padding-left: 10px;
+  padding-right: 10px;
 }
