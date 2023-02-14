@@ -66,7 +66,7 @@ function Task() {
       </section>
       <footer className='footer'>
           <span className='todo-count'>
-            任务总数：{taskStore.list.length} ，已完成数：{taskStore.list.filter(item => item.isDone).length}
+            任务总数：{taskStore.list.length} ，已完成数：{taskStore.finishedLength}
           </span>
       </footer>
     </section>

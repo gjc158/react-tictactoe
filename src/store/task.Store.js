@@ -16,6 +16,13 @@ class TaskStore {
   constructor() {
     makeAutoObservable(this)
   }
+  // computed判断是否全选
+  get isAll() {
+    return this.list.every(item => item.isDone)
+  }
+  get finishedLength () {
+    return this.list.filter(item => item.isDone).length
+  }
   addItem = (item) => {
     this.list.push(item)
   }
@@ -35,10 +42,7 @@ class TaskStore {
       item.isDone = checked
     })
   }
-  // computed判断是否全选
-  get isAll() {
-    return this.list.every(item => item.isDone)
-  }
+  
 
 }
 export default TaskStore
